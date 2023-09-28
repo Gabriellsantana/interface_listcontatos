@@ -1,18 +1,16 @@
 html, body{
     height: 100%;
 }
-
 body {
     background-color:cornflowerblue;
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-    display: flex;/* aplicando o flexBox*/
-    justify-content: center; /*propriedade flexBox pra centralizar os elementos do conteiner horizontal"*/
-    align-items: center; /*centralizando na vertical*/
-    flex-direction:column; /* o display flax ja vem por padrão com row que deixa todos os elementos na mesma linha mais  flex-direction:column; coloca os elementos em colunas */
-  
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction:column; 
 }
 
 .main-title {
@@ -44,7 +42,7 @@ body {
 }
 .list-contatos{
     padding: 0 20px;
-    flex-grow: 1; /*a div oculpa todo espaço que sobra */
+    flex-grow: 1;
 }
 .list-nome{
     font-size: 24px;
@@ -62,10 +60,10 @@ body {
 .item-botoes{
     display: flex;
     align-items: center;
-    gap: 13px; /*afastando os elementos do outro*/
-    opacity: 0; /*transparencia */
+    gap: 13px;
+    opacity: 0;
 }
-.list-item:hover .item-botoes{ /*quando eu paso mause na minha div list-item ai eu solicito que o evento hover aconteca para minha class item-botoes por isso ela vem depois do hover */
+.list-item:hover .item-botoes{ 
     opacity: 0.3;
 
 
